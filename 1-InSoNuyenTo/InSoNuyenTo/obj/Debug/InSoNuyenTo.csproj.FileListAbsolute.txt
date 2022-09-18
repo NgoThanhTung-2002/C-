@@ -1,0 +1,7 @@
+D:\Workspace\C#\InSoNuyenTo\InSoNuyenTo\bin\Debug\InSoNuyenTo.exe.config
+D:\Workspace\C#\InSoNuyenTo\InSoNuyenTo\bin\Debug\InSoNuyenTo.exe
+D:\Workspace\C#\InSoNuyenTo\InSoNuyenTo\bin\Debug\InSoNuyenTo.pdb
+D:\Workspace\C#\InSoNuyenTo\InSoNuyenTo\obj\Debug\InSoNuyenTo.csprojAssemblyReference.cache
+D:\Workspace\C#\InSoNuyenTo\InSoNuyenTo\obj\Debug\InSoNuyenTo.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\InSoNuyenTo\InSoNuyenTo\obj\Debug\InSoNuyenTo.exe
+D:\Workspace\C#\InSoNuyenTo\InSoNuyenTo\obj\Debug\InSoNuyenTo.pdb
