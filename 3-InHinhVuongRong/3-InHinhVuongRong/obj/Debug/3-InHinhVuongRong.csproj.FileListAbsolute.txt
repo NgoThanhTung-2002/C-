@@ -1,0 +1,6 @@
+D:\Workspace\C#\3-InHinhVuongRong\3-InHinhVuongRong\bin\Debug\3-InHinhVuongRong.exe.config
+D:\Workspace\C#\3-InHinhVuongRong\3-InHinhVuongRong\bin\Debug\3-InHinhVuongRong.exe
+D:\Workspace\C#\3-InHinhVuongRong\3-InHinhVuongRong\bin\Debug\3-InHinhVuongRong.pdb
+D:\Workspace\C#\3-InHinhVuongRong\3-InHinhVuongRong\obj\Debug\3-InHinhVuongRong.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\3-InHinhVuongRong\3-InHinhVuongRong\obj\Debug\3-InHinhVuongRong.exe
+D:\Workspace\C#\3-InHinhVuongRong\3-InHinhVuongRong\obj\Debug\3-InHinhVuongRong.pdb
