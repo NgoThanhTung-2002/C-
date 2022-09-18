@@ -1,0 +1,7 @@
+D:\Workspace\C#\InHinhVuong\InHinhVuong\bin\Debug\InHinhVuong.exe.config
+D:\Workspace\C#\InHinhVuong\InHinhVuong\bin\Debug\InHinhVuong.exe
+D:\Workspace\C#\InHinhVuong\InHinhVuong\bin\Debug\InHinhVuong.pdb
+D:\Workspace\C#\InHinhVuong\InHinhVuong\obj\Debug\InHinhVuong.csprojAssemblyReference.cache
+D:\Workspace\C#\InHinhVuong\InHinhVuong\obj\Debug\InHinhVuong.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\InHinhVuong\InHinhVuong\obj\Debug\InHinhVuong.exe
+D:\Workspace\C#\InHinhVuong\InHinhVuong\obj\Debug\InHinhVuong.pdb
