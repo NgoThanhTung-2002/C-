@@ -27,7 +27,7 @@ namespace _3_InHinhVuongRong
                             Console.Write("* ");
                         }
                         else
-                            Console.Write(" ");
+                            Console.Write("  ");
                     }
                 }
                 Console.WriteLine();
