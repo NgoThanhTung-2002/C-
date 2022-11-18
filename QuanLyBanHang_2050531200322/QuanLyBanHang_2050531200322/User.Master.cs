@@ -11,12 +11,13 @@ namespace QuanLyBanHang_2050531200322
 {
     public partial class User : System.Web.UI.MasterPage
     {
+        App_Code.XuLiDuLieu xulidulieu;
         protected void Page_Load(object sender, EventArgs e)
         {
             //DataTable tbDanhMuc = new DataTable();
 
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Workspace\C_Sharp\QuanLyBanHang_2050531200322\QuanLyBanHang_2050531200322\App_Data\dbQuanLyBanHang.mdf;Integrated Security=True";
+            cn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Workspace\QuanLyBanHang_2050531200322\QuanLyBanHang_2050531200322\App_Data\dbQuanLyNhaHang.mdf;Integrated Security=True";
             cn.Open();
 
             string SQL = "select * from tbDanhMuc";
@@ -28,5 +29,7 @@ namespace QuanLyBanHang_2050531200322
 
             cn.Close();
         }
+
+
     }
 }

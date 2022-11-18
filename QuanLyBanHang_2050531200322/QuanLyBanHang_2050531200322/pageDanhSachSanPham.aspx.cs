@@ -16,19 +16,33 @@ namespace QuanLyBanHang_2050531200322
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Workspace\C_Sharp\QuanLyBanHang_2050531200322\QuanLyBanHang_2050531200322\App_Data\dbQuanLyBanHang.mdf;Integrated Security=True";
+            cn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Workspace\QuanLyBanHang_2050531200322\QuanLyBanHang_2050531200322\App_Data\dbQuanLyNhaHang.mdf;Integrated Security=True";
             cn.Open();
 
-            string SQL = "select * from tbSanPham";
+            string SQL = "select * from TbMenu";
             SqlDataAdapter adp = new SqlDataAdapter(SQL, cn);
-            DataTable tbSanPham = new DataTable();
-            adp.Fill(tbSanPham); // fill truyền dữ liệu vào trong table 
-            DataList1.DataSource = tbSanPham;
+            DataTable TbMenu = new DataTable();
+            adp.Fill(TbMenu); // fill truyền dữ liệu vào trong table 
+
+            App_Code.XuLiDuLieu xulydulieu = new App_Code.XuLiDuLieu();
+            string madm = Request.QueryString.Get("IDDANHMUC"); // LUU Y TUONG TU CAI CHITIET
+            SqlParameter[] pr;
+            if (madm != null)
+                pr = new SqlParameter[] { new SqlParameter("@MaDanhMuc", madm) };
+            else
+                pr = new SqlParameter[] { new SqlParameter("@MaDanhMuc", DBNull.Value) };
+            DataList1.DataSource = xulydulieu.getTable("psGetSANPHAM", pr);
+            //DataList1.DataSource = tbSanPham;
             DataList1.DataBind();
             DataList1.RepeatColumns = 4;
+            //cn.Close();
 
-            cn.Close();
+
+            
+            
+
 
         }
+
     }
 }

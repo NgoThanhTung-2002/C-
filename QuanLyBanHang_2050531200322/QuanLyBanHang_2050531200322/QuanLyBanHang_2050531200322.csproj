@@ -67,27 +67,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="ADMIN\QUANLYBANHANG.aspx" />
+    <Content Include="App_Data\dbQuanLyBanHoa.mdf" />
+    <Content Include="App_Data\dbQuanLyBanHoa_log.ldf">
+      <DependentUpon>dbQuanLyBanHoa.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\dbQuanLyBanHang.mdf" />
-    <Content Include="App_Data\dbQuanLyBanHang_log.ldf">
-      <DependentUpon>dbQuanLyBanHang.mdf</DependentUpon>
+    <Content Include="App_Data\dbQuanLyNhaHang.mdf" />
+    <Content Include="App_Data\dbQuanLyNhaHang_log.ldf">
+      <DependentUpon>dbQuanLyNhaHang.mdf</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
     <Content Include="IMAGES\BANNER.jfif" />
-    <Content Include="IMAGES\Galaxy-S22-Ultra-Burgundy.jpg" />
-    <Content Include="IMAGES\iphone-14-pro-max.jpg" />
-    <Content Include="IMAGES\oppo-reno6.jpg" />
-    <Content Include="IMAGES\oppoReno7.jpg" />
-    <Content Include="IMAGES\samsung-galaxy-z.jpg" />
+    <Content Include="IMAGES\download.jpg" />
+    <Content Include="IMAGES\gahaphanh.jpg" />
+    <Content Include="IMAGES\gaquay.jpg" />
+    <Content Include="IMAGES\gatim.jpg" />
+    <Content Include="IMAGES\gatim.png" />
+    <Content Include="IMAGES\ip12.png" />
+    <Content Include="IMAGES\oppo.jpg" />
+    <Content Include="IMAGES\realme.jpg" />
+    <Content Include="IMAGES\vitquay.jpg" />
+    <Content Include="IMAGES\Vivo.jpg" />
     <Content Include="pageChiTietSanPham.aspx" />
     <Content Include="pageDanhSachSanPham.aspx" />
     <Content Include="pageGioHang.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="pageQuanLyDanhMuc.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\BL\bl_QUANLYDANHMUC.cs" />
+    <Compile Include="ADMIN\QUANLYBANHANG.aspx.cs">
+      <DependentUpon>QUANLYBANHANG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\QUANLYBANHANG.aspx.designer.cs">
+      <DependentUpon>QUANLYBANHANG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\CART.cs" />
+    <Compile Include="App_Code\Item.cs" />
+    <Compile Include="App_Code\PD\pd_QUANLYDANHMUC.cs" />
+    <Compile Include="App_Code\XuLiDuLieu.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -112,6 +133,13 @@
     <Compile Include="pageGioHang.aspx.designer.cs">
       <DependentUpon>pageGioHang.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pageQuanLyDanhMuc.aspx.cs">
+      <DependentUpon>pageQuanLyDanhMuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageQuanLyDanhMuc.aspx.designer.cs">
+      <DependentUpon>pageQuanLyDanhMuc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
@@ -132,7 +160,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Code\" />
     <Folder Include="CSS\" />
     <Folder Include="JS\" />
     <Folder Include="Models\" />
